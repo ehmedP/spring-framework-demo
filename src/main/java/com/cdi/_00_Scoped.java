@@ -1,11 +1,11 @@
 
 package com.cdi;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.context.ConversationScoped;
-import javax.enterprise.context.Dependent;
-import javax.enterprise.context.RequestScoped;
-import javax.faces.bean.SessionScoped;
+// import javax.enterprise.context.ApplicationScoped;
+// import javax.enterprise.context.ConversationScoped;
+// import javax.enterprise.context.Dependent;
+// import javax.enterprise.context.RequestScoped;
+// import javax.faces.bean.SessionScoped;
 import javax.inject.Named;
 
 // scoped movzusu

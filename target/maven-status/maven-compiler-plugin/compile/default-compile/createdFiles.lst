@@ -2,7 +2,10 @@ com\example\StudentDTO$StudentDTOBuilder.class
 com\example\Jsf23Activator.class
 com\example\StudentDTO.class
 com\cdi\_04_New.class
+com\cdi\_00_Scoped.class
 com\cdi\_01_Named$_01_NamedBuilder.class
 com\cdi\_03_Inject.class
+com\ioc_di_olmadan\Calisan.class
+com\ioc_di_olmadan\Patron.class
 com\cdi\_01_Named.class
 com\cdi\_02_Produces.class
