@@ -9,7 +9,6 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter @Setter
 @Builder
 
 @Named(value = "namedtuto")
