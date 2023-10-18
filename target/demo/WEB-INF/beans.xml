@@ -14,4 +14,8 @@
       <!-- <class>com.alternatives.Patron2</class> -->
    </alternatives>
 
+   <interceptors>
+      <class>com.aopIntercaptor.IntercaptorAssl</class>
+   </interceptors>
+
 </beans>

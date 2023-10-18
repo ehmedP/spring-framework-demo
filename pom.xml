@@ -123,6 +123,22 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- spring framework dep -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.3.13</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.interceptor/javax.interceptor-api -->
+        <dependency>
+            <groupId>javax.interceptor</groupId>
+            <artifactId>javax.interceptor-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+
+
         <!-- Import the JSF API, we use provided scope as the API is included in WildFly / JBoss EAP -->
         <dependency>
             <groupId>org.jboss.spec.javax.faces</groupId>
