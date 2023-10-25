@@ -18,4 +18,8 @@
       <class>com.aopIntercaptor.IntercaptorAssl</class>
    </interceptors>
 
+   <decorators>
+      <class>com.aopDecorator.EvDecorator</class>
+   </decorators>
+
 </beans>
