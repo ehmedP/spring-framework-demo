@@ -1,56 +1,38 @@
-This project was created from the archetype "wildfly-jakartaee-webapp-archetype".
+# Spring Framework Demo
 
-To deploy it:
-Run the maven goals "install wildfly:deploy"
+This repository contains the files I created while learning Spring Framework. These files consist of configurations, Java source code files, and the libraries I used.
 
-To undeploy it:
-Run the maven goals "wildfly:undeploy"
+## About the Project
 
-==========================
+This project includes examples and applications I created during my learning journey with Spring Framework. Below is a list of the files present in the project:
 
-DataSource:
-This sample includes a "persistence.xml" file in "src/main/resources/META-INF". This file defines
-a persistence unit "demoPersistenceUnit" which uses the JakartaEE default database.
+- `application.properties`: Application configuration file.
+- `pom.xml`: Maven project configuration file.
+- `src/main/java/com/example/demo/DemoApplication.java`: Main application class.
+- `src/main/java/com/example/demo/controller/`: Controller classes.
+- `src/main/java/com/example/demo/service/`: Service classes.
+- `src/main/java/com/example/demo/repository/`: Repository classes for database access.
+- `src/main/resources/templates/`: HTML templates.
 
-In production environment, you should define a database in WildFly config and point to this database
-in "persistence.xml".
+## Used Libraries
 
-If you don't use entity beans, you can delete "persistence.xml".
-==========================
+The project utilizes the following libraries:
 
-JSF:
-The web application is prepared for JSF 2.3 by bundling an empty "faces-config.xml" in "src/main/webapp/WEB-INF".
-In case you don't want to use JSF, simply delete this file and "src/main/webapp/beans.xml" and "src/main/java/com/example/Jsf23Activator.java"
-==========================
+- Spring Boot
+- Spring MVC
+- Spring Data JPA
+- Thymeleaf
+- Hibernate
+- H2 Database
 
-Testing:
-This sample is prepared for running unit tests with the Arquillian framework.
+## How to Run
 
-The configuration can be found in "demo/pom.xml":
+The project is designed to be run in a local development environment. Follow the steps below to run the project:
 
-Three profiles are defined:
--"default": no integration tests are executed.
--"arq-remote": you have to start a WildFly server on your machine. The tests are executed by deploying 
- the application to this server.
- Here the "maven-failsafe-plugin" is enabled so that integration tests can be run.
- Run maven with these arguments: "clean verify -Parq-remote"
--"arq-managed": this requires the environment variable "JBOSS_HOME" to be set: 
- The server found in this path is started and the tests are executed by deploying the application to this server.
- Instead of using this environment variable, you can also define the path in "arquillian.xml".
- Here the "maven-failsafe-plugin" is enabled so that integration tests can be run.
- Run maven with these arguments: "clean verify -Parq-managed"
+1. Open a terminal in the project directory.
+2. Run the command `mvn spring-boot:run` to start the project.
+3. Access the application by navigating to `http://localhost:8080` in your web browser.
 
-The Arquillian test runner is configured with the file "src/test/resources/arquillian.xml" 
-(duplicated in EJB and WEB project, depending where your tests are placed).
-The profile "arq-remote" uses the container qualifier "remote" in this file.
-The profile "arq-managed" uses the container qualifier "managed" in this file.
+## License
 
-The project contains an integration test "SampleIT" which shows how to create the deployable WAR file using the ShrinkWrap API.
-You can delete this test file if no tests are necessary.
-
-Why integration tests instead of the "maven-surefire-plugin" testrunner?
-The Arquillian test runner deploys the WAR file to the WildFly server and thus you have to build it yourself with the ShrinkWrap API.
-The goal "verify" (which triggers the maven-surefire-plugin) is executed later in the maven build lifecyle than the "test" goal so that the target 
-artifact ("demo.war") is already built. You can build
-the final WAR by including those files. The "maven-surefire-plugin" is executed before the WAR file
-are created, so this WAR files would have to be built in the "@Deployment" method, too. 
+This project is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
