@@ -1,38 +1,49 @@
 # Spring Framework Demo
 
-This repository contains the files I created while learning Spring Framework. These files consist of configurations, Java source code files, and the libraries I used.
+This is a GitHub repository I created while learning Spring Framework. This repository contains information about the basic configuration of a Spring application and the libraries used.
 
-## About the Project
+## Configuration
 
-This project includes examples and applications I created during my learning journey with Spring Framework. Below is a list of the files present in the project:
+The project includes the following configuration files:
 
-- `application.properties`: Application configuration file.
-- `pom.xml`: Maven project configuration file.
-- `src/main/java/com/example/demo/DemoApplication.java`: Main application class.
-- `src/main/java/com/example/demo/controller/`: Controller classes.
-- `src/main/java/com/example/demo/service/`: Service classes.
-- `src/main/java/com/example/demo/repository/`: Repository classes for database access.
-- `src/main/resources/templates/`: HTML templates.
+- `application.properties`: A properties file that contains application configuration.
+- `logback.xml`: An XML file that configures logging using the Logback library.
 
 ## Used Libraries
 
-The project utilizes the following libraries:
+The project uses the following libraries:
 
-- Spring Boot
-- Spring MVC
-- Spring Data JPA
-- Thymeleaf
-- Hibernate
-- H2 Database
+- Spring Framework: The main library used for Spring application development.
+- Spring Boot: A tool used to quickly bootstrap and configure Spring-based applications.
+- Spring Data JPA: An integration of the Java Persistence API (JPA) that simplifies database operations.
+- Hibernate: A library used for object-relational mapping (ORM) operations.
+- Logback: A logging framework used for logging operations.
+- Lombok: A library used to simplify and enhance Java classes.
 
 ## How to Run
 
-The project is designed to be run in a local development environment. Follow the steps below to run the project:
+Since the project is a Spring Boot application, you can follow these steps to run it:
 
-1. Open a terminal in the project directory.
-2. Run the command `mvn spring-boot:run` to start the project.
-3. Access the application by navigating to `http://localhost:8080` in your web browser.
+1. Clone the project repository to your computer.
+2. Open the project using a Java IDE (such as IntelliJ IDEA or Eclipse).
+3. Locate the `DemoApplication.java` class within the project and run it.
+4. Once the application is successfully started, you can view it by accessing `http://localhost:8080` in your browser.
+
+## Contributing
+
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork this repository to your own GitHub account.
+2. Create a new branch that includes your changes.
+3. Make your modifications and commit them.
+4. Push the created branch to your repository.
+5. Submit a pull request to this repository.
+6. Your changes will be reviewed and evaluated together.
 
 ## License
 
-This project is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+This project is licensed under the Apache License 2.0. For more information, please see the [LICENSE](LICENSE) file.
+
+---
+
+I hope this `readme.md` file meets your needs! If you have any further questions, I'll be happy to assist you.
